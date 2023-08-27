@@ -1,0 +1,124 @@
+@import (reference) 'color.less';
+
+@media screen and (max-width: 767px) {
+  .tabs-custom-default {
+    .ant-tabs {
+      .ant-tabs-nav-wrap {
+        padding: 0 16px;
+
+        .ant-tabs-nav-list {
+          width: unset !important;
+          min-width: unset;
+          height: 48px !important;
+          display: flex;
+          padding-right: 44px;
+          justify-content: space-between;
+
+          .ant-tabs-tab {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .ant-tabs-nav {
+        margin-bottom: 0 !important;
+
+        &::before {
+          border: unset !important;
+        }
+      }
+
+      .ant-tabs-tab-active {
+        border-bottom: 4px solid white;
+
+        .ant-tabs-tab-btn {
+          color: white !important;
+          font-weight: 500;
+          font-size: 12px;
+        }
+      }
+
+      .ant-tabs-ink-bar {
+        height: 4px !important;
+        background: white;
+        display: none;
+      }
+    }
+  }
+
+  [data-theme='dark'] {
+    .ant-table {
+      font-size: 12px;
+
+      .ant-table-title {
+        padding: 0;
+      }
+    }
+
+    .modal-default {
+      .ant-modal {
+        .ant-modal-header {
+          border-bottom: unset;
+          background: @color-background-neuture-800;
+          padding: 12px;
+
+          .ant-modal-title {
+            font-weight: 600;
+            font-size: 20px;
+            color: white;
+          }
+        }
+
+        .ant-modal-content {
+          border-radius: 12px;
+          overflow: hidden;
+          background: @color-background-neuture-800  !important;
+        }
+
+        .ant-modal-close-x {
+          font-size: 16px;
+          margin-top: 0;
+          color: white;
+          width: 50px;
+        }
+
+        .ant-modal-body {
+          padding: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .otp-input {
+    width: 60px !important;
+    height: 60px !important;
+    margin: 0 !important;
+    background: @color-background-neuture-700;
+  }
+
+  .is-complete {
+    background: @color-background-neuture-700  !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .tabs-custom-default {
+    .ant-tabs {
+      .ant-tabs-nav-wrap {
+        padding: 0 16px;
+      }
+    }
+
+    .ant-tabs-tab {
+      font-size: 14px !important;
+    }
+  }
+
+  [data-theme='dark'] {
+    .ant-table {
+      font-size: 14px;
+    }
+  }
+}

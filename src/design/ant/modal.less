@@ -1,0 +1,86 @@
+@import '../color.less';
+
+[data-theme="dark"] {
+  .modal-tree-affiliate {
+    .ant-modal .ant-table thead > tr > th {
+      background-color: transparent !important;
+    }
+
+    .ant-modal {
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .ant-modal-header {
+      border-bottom: unset;
+      background: @color-background-neuture-800;
+      padding: 33px;
+
+      .ant-modal-title {
+        font-weight: 600;
+        font-size: 36px;
+        color: white;
+      }
+    }
+
+    .ant-modal-content {
+      background: @color-background-neuture-800 !important;
+    }
+
+    .ant-modal-footer {
+      display: none;
+    }
+  }
+
+  .modal-default {
+    .ant-modal {
+      .ant-modal-header {
+        border-bottom: unset;
+        background: @color-background-neuture-800;
+        padding: 33px;
+
+        .ant-modal-title {
+          font-weight: 600;
+          font-size: 36px;
+          color: white;
+        }
+      }
+
+      .ant-modal-content {
+        border-radius: 12px;
+        overflow: hidden;
+        background: @color-background-neuture-800 !important;
+      }
+
+      .ant-modal-close-x {
+        font-size: 28px;
+        margin-top: 20px;
+        color: white;
+      }
+
+      .ant-tabs-nav {
+        margin-bottom: 0 !important;
+        margin-top: 8px;
+      }
+
+      .ant-tabs-tab {
+        font-size: 16px;
+      }
+
+      .ant-modal-footer {
+        display: none !important;
+      }
+
+      .ant-modal-body {
+        padding: 33px;
+      }
+    }
+  }
+}
+
+[data-theme="dark"] {
+  .ant-table thead > tr > th {
+    background-color: transparent !important;
+  }
+
+}

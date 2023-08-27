@@ -1,0 +1,60 @@
+@import (reference) '../color.less';
+
+// input
+.ant-input {
+  height: @height-input;
+  border-radius: 8px !important;
+  overflow: hidden;
+  &-number,
+  &-number-group-wrapper {
+    min-width: 110px;
+    width: 100% !important;
+    max-width: 100%;
+  }
+}
+
+.ant-input-affix-wrapper .ant-input-suffix {
+  right: 9px;
+}
+
+.ant-input-clear-icon {
+  margin-right: 5px;
+}
+
+.ant-input-affix-wrapper-textarea-with-clear-btn {
+  padding: 0 !important;
+
+  textarea.ant-input {
+    padding: 4px;
+  }
+}
+
+.ant-input-password {
+  height: @height-input;
+  border-radius: 8px !important;
+  overflow: hidden;
+
+  .ant-input {
+    height: unset;
+  }
+}
+
+.ant-input-affix-wrapper {
+  height: @height-input;
+
+  .ant-input {
+    height: 37px;
+  }
+
+  .ant-input-prefix {
+    padding: 0 8px !important;
+  }
+}
+
+.ant-input-number {
+  height: @height-input;
+  display: flex !important;
+  align-items: center !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+}

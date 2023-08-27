@@ -1,0 +1,37 @@
+@import '../color.less';
+
+[data-theme='dark'] {
+  .dashboard-game-data-select {
+    .ant-select-selector {
+      border: 1px solid transparent !important;
+      background: @color-background-neuture-700  !important;
+      border-radius: 4px !important;
+    }
+
+    .ant-select-focused {
+      .ant-select-selector {
+        border: 1px solid transparent !important;
+        box-shadow: unset !important;
+      }
+    }
+  }
+
+  .custom-select-default {
+
+    .ant-select-selector {
+      border: 1px solid @color-background-neuture-600 !important;
+      border-radius: 8px !important;
+    }
+  }
+}
+
+.ant-select {
+  .ant-select-selection-item {
+    display: flex;
+  }
+
+  .ant-select-selection-search {
+    display: flex;
+    align-items: center;
+  }
+}

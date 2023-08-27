@@ -1,0 +1,90 @@
+@prefix-cls: ~'@{namespace}-basic-table';
+@import '../color.less';
+// fix table unnecessary scrollbar
+.@{prefix-cls} {
+  .hide-scrollbar-y {
+    .ant-spin-nested-loading {
+      .ant-spin-container {
+        .ant-table {
+          .ant-table-content {
+            .ant-table-scroll {
+              .ant-table-hide-scrollbar {
+                overflow-y: auto !important;
+              }
+
+              .ant-table-body {
+                overflow-y: auto !important;
+              }
+            }
+
+            .ant-table-fixed-right {
+              .ant-table-body-outer {
+                .ant-table-body-inner {
+                  overflow-y: auto !important;
+                }
+              }
+            }
+
+            .ant-table-fixed-left {
+              .ant-table-body-outer {
+                .ant-table-body-inner {
+                  overflow-y: auto !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hide-scrollbar-x {
+    .ant-spin-nested-loading {
+      .ant-spin-container {
+        .ant-table {
+          .ant-table-content {
+            .ant-table-scroll {
+              .ant-table-hide-scrollbar {
+                //overflow-x: auto !important;
+              }
+
+              .ant-table-body {
+                overflow: auto !important;
+              }
+            }
+
+            .ant-table-fixed-right {
+              .ant-table-body-outer {
+                .ant-table-body-inner {
+                  overflow-x: auto !important;
+                }
+              }
+            }
+
+            .ant-table-fixed-left {
+              .ant-table-body-outer {
+                .ant-table-body-inner {
+                  overflow-x: auto !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-table {
+  .ant-table-cell {
+    word-break: break-word !important;
+  }
+}
+
+html[data-theme='dark'] {
+  .ant-table-has-fix-left {
+    .ant-table-cell-fix-left {
+      background-color: @color-background-neuture-800 !important;
+    }
+  }
+}

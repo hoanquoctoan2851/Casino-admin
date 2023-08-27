@@ -1,0 +1,40 @@
+.tabs-custom-default {
+  .ant-tabs {
+    .ant-tabs-nav-wrap {
+      padding: 0 75px;
+
+      .ant-tabs-nav-list {
+        width: 100% !important;
+        min-width: 600px;
+        height: 60px !important;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .ant-tabs-nav {
+      margin-bottom: 0 !important;
+
+      &::before {
+        border: unset !important;
+      }
+    }
+
+    .ant-tabs-tab-active {
+      border-bottom: 4px solid white;
+
+      .ant-tabs-tab-btn {
+        color: white !important;
+        font-weight: 500;
+        font-size: 20px;
+      }
+    }
+
+    .ant-tabs-ink-bar {
+      height: 4px !important;
+      background: white;
+      display: none;
+    }
+  }
+}
+
